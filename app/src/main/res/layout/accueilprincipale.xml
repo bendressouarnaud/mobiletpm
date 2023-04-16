@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintverticalacc">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaracuueil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitleTextColor="#151515"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <!-- app:menu="@menu/nav_search_menu"  -->
+
+
+    <TextView
+        android:id="@+id/titregestion"
+        app:layout_constraintTop_toBottomOf="@id/toolbaracuueil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Gestion des supports"
+        android:textStyle="bold"
+        tools:textColor="@android:color/background_dark" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/titregestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Renseigner la commune : " />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoVille"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="Commune" />
+
+
+    <TextView
+        android:id="@+id/textQuartier"
+        app:layout_constraintTop_toBottomOf="@id/autoVille"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Renseigner le quartier : " />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoQuartier"
+        app:layout_constraintTop_toBottomOf="@id/textQuartier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Quartier" />
+
+
+    <TextView
+        android:id="@+id/textSecteur"
+        app:layout_constraintTop_toBottomOf="@id/autoQuartier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Renseigner le secteur : " />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoSecteur"
+        app:layout_constraintTop_toBottomOf="@id/textSecteur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Secteur" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/autoSecteur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableLeft="@drawable/ic_look_for"
+        android:background="@drawable/round_buttons"
+        android:text="Rechercher"
+        app:backgroundTint="#268A3C"
+        android:id="@+id/butlookfor"
+        android:layout_marginTop="40dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBaraccueil"
+        app:layout_constraintTop_toBottomOf="@id/butlookfor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="?android:attr/progressBarStyle"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

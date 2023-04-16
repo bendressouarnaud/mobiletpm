@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_addquartier"
+            android:title="Ajouter un quartier"
+            android:icon="@drawable/ic_add_quartier"/>
+
+        <item
+            android:id="@+id/nav_addsecteur"
+            android:title="Ajouter un secteur"
+            android:icon="@drawable/ic_add_secteur"/>
+
+        <item
+            android:id="@+id/nav_addrefresh"
+            android:title="Réinitialiser"
+            android:icon="@drawable/ic_refresh"/>
+
+        <!--
+        <item android:title="Autres fonctionnalités">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:icon="@android:drawable/ic_menu_week"
+                        android:title="Activité commerciale" />
+                    <item
+                        android:icon="@android:drawable/ic_dialog_email"
+                        android:title="Devis" />
+                </group>
+            </menu>
+        </item>
+        -->
+
+    </group>
+
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tpmtn</string>
+
+    <string name="fingerprint_title_connexion">
+        Connexion
+    </string>
+    <string name="fingerprint_message_connexion">
+        Connectez-vous en utilisant le capteur d\'empreinte
+    </string>
+
+    <string name="navigation_drawer_open">Ouvrir le menu de navigation</string>
+    <string name="navigation_drawer_close">Fermer le menu de navigation</string>
+    <string name="title_activity_affichercarte">Affichercarte</string>
+</resources>

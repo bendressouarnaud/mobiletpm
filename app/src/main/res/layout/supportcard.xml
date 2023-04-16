@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        android:backgroundTint="#F8F4F0"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/imagesupport"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="7dp"
+            >
+
+            <TextView
+                android:id="@+id/textLibPan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Libelle panneau" />
+
+            <TextView
+                android:id="@+id/textPanDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Date de creation" />
+
+            <TextView
+                android:id="@+id/textPanHeure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Heure de creation" />
+
+            <TextView
+                android:id="@+id/textPanId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Identifiant panneau" />
+
+            <TextView
+                android:id="@+id/textPanEmplacement"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="2dp"
+                android:text="Emplacement" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutbutts"
+                >
+
+                <Button
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/butAfficher"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Aff"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+                <Button
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/butModifier"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Modif"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <Button
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/butActualiser"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Actual."
+                    android:textColor="@android:color/holo_green_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</layout>
