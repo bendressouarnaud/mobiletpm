@@ -11,8 +11,8 @@ android {
         applicationId "com.ankk.tpmtn"
         minSdk 29
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,6 +26,8 @@ android {
             buildConfigField "int", "AGE_LIMIT", '18'
         }
         release {
+            //buildConfigField "String", "API_CRM_URL", '"https://ankkapp.com/"'
+            buildConfigField "String", "API_CRM_URL", '"http://51.91.101.20/"'
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
